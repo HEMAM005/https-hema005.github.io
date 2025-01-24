@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #282828;
+            color: purple;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #FF4500;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: blue;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            border-bottom: 2px solid white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('C:\Users\91877\Downloads\welcome-to-our-shop-sign-design-monochrome-drop-shadow-white-background-vector-your-store-cafe-stall-94601507.webp0') no-repeat center center/cover;
+            height: 400px;
+            text-align: center;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        /* Product Section */
+        section#products {
+            padding: 50px 0;
+        }
+
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            font-size: 1.3rem;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        .product-card p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .product-card .price {
+            font-size: 1.2rem;
+            color: #FF4500;
+            margin: 10px 0;
+        }
+
+        .product-card button {
+            background-color: #FF4500;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background-color: #E63E00;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #282828;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product-card {
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>ShopEasy - Your Favorite Online Store</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to ShopEasy</h1>
+        <p>Find the best products at unbeatable prices</p>
+    </div>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="products-container">
+
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="C:\Users\91877\Downloads\diary-milk-chocolate-90-gm.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>DIARY MILK.</p>
+                <div class="price">$49.99</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="C:\Users\91877\Downloads\2_MG_26861.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>KINDER JOY.</p>
+                <div class="price">$59.99</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="C:\Users\91877\Downloads\OIP.jpeg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>GALAXY.</p>
+                <div class="price">$39.99</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <img src="C:\Users\91877\Downloads\27684.jpg" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>GALAXY.</p>
+                <div class="price">$29.99</div>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>Contact Us: shop@shopeasy.com | Phone: +1 234 567 890</p>
+        <p>&copy; 2024 ShopEasy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
